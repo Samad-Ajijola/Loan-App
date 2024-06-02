@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main">
+    <h1>Loan Checker</h1>
+    <form id="credit-form">
+        <label for="Name">Name of Customer:</label><br>
+        <input type="text" id="Name" name="Name" required placeholder="Enter your Name"> <br><br>
+        <label for="currentAmount">Account Balance:</label><br>
+        <input type="text" id="currentAmount" name="currentAmount" required placeholder="Account Balance"><br><br>
+        <label for="loanAmount">Loan Amount:</label><br>
+        <input type="text" id="loanAmount" name="loanAmount" required placeholder="Enter loan Amount"><br><br>
+        <label for="creditHistory">Credit History:</label><br>
+        <select name="creditHistory" required id="creditHistory">
+            <option value="Select">Select Month</option>
+            <option value="1">1 month</option>
+            <option value="2">2 months</option>
+            <option value="3">3 months</option>
+            <option value="4">4 months</option>
+            <option value="5">5 months</option>
+            <option value="6">6 months</option>
+            <option value="7">7 months</option>
+            <option value="8">8 months</option>
+            <option value="9">9 months</option>
+            <option value="10">10 months</option>
+            <option value="11">11 months</option>
+            <option value="12">12 months</option>
+            </select><br><br>
+        <label for="lastDeposit">Last Deposit Date:</label><br>
+        <input type="date" id="lastDeposit" name="lastDeposit" required placeholder="Last Deposit Date"><br><br>
+        <label for="lastLoanCollection">Last Loan Collection Date:</label><br>
+        <input type="date" id="lastLoanCollection" name="lastLoanCollection" required placeholder="Last Loan Collection Date"><br><br>
+        <label for="loanRepaymentPeriod">Loan Repayment Period:</label>
+        <select name="loanRepaymentPeriod" required id="loanRepaymentPeriod">
+            <option value="Select">Select Month</option>
+            <option value="1">1 month</option>
+            <option value="2">2 months</option>
+            <option value="3">3 months</option>
+            <option value="4">4 months</option>
+            <option value="5">5 months</option>
+            <option value="6">6 months</option>
+            <option value="7">7 months</option>
+            <option value="8">8 months</option>
+            <option value="9">9 months</option>
+            <option value="10">10 months</option>
+            <option value="11">11 months</option>
+            <option value="12">12 months</option>
+            </select><br><br>
+        <label for="accountType">Account Type:</label>
+        <select name="accountType" id="accountType">
+            <option value="Select">Select Account</option>
+            <option value="Current">Current Account</option>
+            <option value="Savings">Savings Account</option><br><br>
+            </select>
+        <input type="submit" value="Check Loan">
+    </form>
+    <div id="result"></div>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
